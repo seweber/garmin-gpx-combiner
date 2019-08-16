@@ -1,0 +1,6 @@
+[submodule "garminexport"]
+	path = garminexport
+	url = https://github.com/petergardfjall/garminexport
+[submodule "gpxpy"]
+	path = gpxpy
+	url = https://github.com/tkrajina/gpxpy
