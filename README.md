@@ -1,5 +1,5 @@
 # GPX Python Scripts
-The repository contains Python 3 scripts for processing GPX tracks, licensed under the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0). The scripts depend on the following Python libraries which can be installed via pip: `numpy`, `mayavi`, `keyring`, `tqdm`, `blessings`
+The repository contains Python 3 scripts for processing [GPX tracks](https://en.wikipedia.org/wiki/GPS_Exchange_Format). The scripts are released under the terms of the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0). The scripts depend on the following Python libraries which can be installed via pip: `numpy`, `mayavi`, `keyring`, `tqdm`, `blessings`
 
 ## download-gpx-from-garmin.py
 
