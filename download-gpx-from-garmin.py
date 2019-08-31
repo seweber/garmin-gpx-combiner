@@ -1,6 +1,5 @@
 import sys
-sys.path.insert(0,'garminexport')
-sys.path.insert(1,'gpxpy')
+sys.path.append('garminexport')
 from garminexport.garminclient import GarminClient
 from garminexport.retryer import Retryer, ExponentialBackoffDelayStrategy, MaxRetriesStopStrategy
 import gpxpy
@@ -34,10 +33,10 @@ with open(file_username, 'w') as f:
     f.write(username)
 
 # Read Garmin Connect password
-password = keyring.get_password('garmin-gpx-combiner', username)
+password = keyring.get_password('download-gpx-from-garmin.py', username)
 if not password:
     password = getpass.getpass(prompt='Garmin Connect password: ', stream=None) 
-    keyring.set_password('garmin-gpx-combiner', username, password)
+    keyring.set_password('download-gpx-from-garmin.py', username, password)
 
 # Read settings
 date_start = datetime(2019, 7, 28, tzinfo=tzutc())
